@@ -8,17 +8,19 @@ import {
   CloseButton,
 } from './styles';
 
+interface Props {
+  reset: () => void;
+}
+
 export function UploadHasFailed() {
   return (
     <Container>
-      <Avatar />
+      <Avatar error />
       <Wrapper>
         <Title>Sorry, the upload failed.</Title>
-        <Description>Try again</Description>
+        <Description >Try again</Description>
       </Wrapper>
-
-      <CloseButton />
-
+      <CloseButton/>
     </Container>
   );
 }

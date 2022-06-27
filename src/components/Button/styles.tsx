@@ -22,4 +22,6 @@ export const Container = styled.button`
 
   cursor: pointer;
 
+  margin-top: 32px;
+
 `;

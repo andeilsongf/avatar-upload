@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 interface StyleProps {
   url?: string;
@@ -10,13 +10,16 @@ export const Container = styled.div`
 `;
 
 export const Wrapper = styled.div``;
-  
+
 export const Image = styled.div<StyleProps>`
   display: flex;
   align-items: center;
   justify-content: center;
 
   background-color: #c3cbd5;
+
+  ${({ url }) => url ? css`background: ${`url(${url})`};` : ''}
+
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -25,6 +28,8 @@ export const Image = styled.div<StyleProps>`
   height: 114px;
 
   border-radius: 57px;
+
+  margin-right: 32px;
 
 `;
 

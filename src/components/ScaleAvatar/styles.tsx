@@ -1,7 +1,13 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  
+  display: flex;
+  flex-direction: row;
+
+  position: relative;
+  justify-content: space-between;
+  width: 100%;
+  padding: 32px 28px 32px 32px;
 `;
 
 export const ScaleWrapper = styled.div`
@@ -31,7 +37,7 @@ export const CloseButton = styled.img`
   position: absolute;
 
   top: 36px;
-  left: 29px;
+  right: 29px;
 
   cursor: pointer;
 
