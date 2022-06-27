@@ -9,7 +9,7 @@ import {
   IconAlertSvg
 } from './styles';
 
-interface ImageProps extends HTMLAttributes<HTMLDivElement> {
+interface Props extends HTMLAttributes<HTMLDivElement> {
   error?: boolean;
   image?: File | null;
   imgRef?: RefObject<HTMLDivElement>;
@@ -19,7 +19,7 @@ export function Avatar({
   error,
   image,
   imgRef
-}: ImageProps) {
+}: Props) {
 
   const [path, setPath] = useState<string>('');
 

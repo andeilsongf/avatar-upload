@@ -34,4 +34,6 @@ export const Description = styled.span`
   color: #495567;
 `;
   
-export const InputArea = styled.input``;
+export const InputArea = styled.input`
+  display: none;
+`;

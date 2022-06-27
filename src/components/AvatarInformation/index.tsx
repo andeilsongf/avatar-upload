@@ -29,10 +29,10 @@ export function AvatarInformation({
       </Wrapper>
       <Description>Drop the image here or click to browse.</Description>
       <InputArea 
-        ref={inputRef}
         type='file'
-        accept='image/png, image/jpeg, image/jpg'
+        ref={inputRef}
         onChange={onChangeInput}
+        accept='image/png, image/jpeg, image/jpg'
       />
     </Container>
   );

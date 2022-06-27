@@ -21,12 +21,6 @@ export function App() {
     inputRef.current?.click();
   };
 
-  const reset = () => {
-    setAvatar(null);
-    setError(false);
-    setIsSaved(false);
-  };
-
   const imageIsValid = (image?: File) => {
     const validFormats = ['image/jpeg', 'image/jpg', 'image/png'];
 
@@ -43,6 +37,12 @@ export function App() {
 
     setError(!imageIsValid(image));
     
+  }
+
+  const reset = () => {
+    setAvatar(null);
+    setError(false);
+    setIsSaved(false);
   };
 
   const dropAvatar = (event: DragEvent<HTMLDivElement>) => {
@@ -51,10 +51,23 @@ export function App() {
     onUpdateStatus(image);
   };
 
+
   const onChangeInput = (event: React.FormEvent<HTMLInputElement>) => {
     const selectedFile = (event.target as HTMLInputElement).files![0];
 
     onUpdateStatus(selectedFile);
+  };
+
+  const dragOver = (event: DragEvent<HTMLDivElement>) => {
+    event.preventDefault();
+  };
+
+  const dragEnter = (event: DragEvent<HTMLDivElement>) => {
+    event.preventDefault();
+  };
+
+  const dragLeave = (event: DragEvent<HTMLDivElement>) => {
+    event.preventDefault();
   };
 
   const renderChild = () => {
@@ -63,6 +76,7 @@ export function App() {
     if (!isError && !avatar)
       return (
         <AvatarInformation
+          inputRef={inputRef}
           onChangeInput={onChangeInput}
         />
       );
@@ -94,8 +108,10 @@ export function App() {
       isSaved={isSaved}
       onClick={onClickContainer}
       onDrop={dropAvatar}
+      onDragOver={dragOver}
+      onDragEnter={dragEnter}
+      onDragLeave={dragLeave}
     >
-
       {renderChild()}
 
     </Container>
