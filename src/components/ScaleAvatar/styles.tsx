@@ -5,7 +5,6 @@ export const Container = styled.div`
   flex-direction: row;
 
   position: relative;
-  justify-content: space-between;
   width: 100%;
   padding: 32px 28px 32px 32px;
 `;
@@ -14,7 +13,7 @@ export const ScaleWrapper = styled.div`
   display: flex;
   flex-direction: column;
 
-  width: 100%;
+  width: 276px;
 `;
   
 export const Title = styled.div`
