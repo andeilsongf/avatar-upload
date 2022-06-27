@@ -37,6 +37,5 @@ export const Container = styled.div<Props>`
   background-color: #f2f5f8;
   border-radius: 8px;
 
-  margin: 200px auto;
 `;
 

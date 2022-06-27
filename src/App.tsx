@@ -102,19 +102,21 @@ export function App() {
   };
 
   return (
-    <Container
-      image={avatar}
-      isError={isError}
-      isSaved={isSaved}
-      onClick={onClickContainer}
-      onDrop={dropAvatar}
-      onDragOver={dragOver}
-      onDragEnter={dragEnter}
-      onDragLeave={dragLeave}
-    >
-      {renderChild()}
+    <div style={{ height: "100vh", alignItems: "center", justifyContent: "center", display: 'flex'}}>
+      <Container
+        image={avatar}
+        isError={isError}
+        isSaved={isSaved}
+        onClick={onClickContainer}
+        onDrop={dropAvatar}
+        onDragOver={dragOver}
+        onDragEnter={dragEnter}
+        onDragLeave={dragLeave}
+      >
+        {renderChild()}
 
-    </Container>
+      </Container>
+    </div>
   )
 
 }
