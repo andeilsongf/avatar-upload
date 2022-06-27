@@ -12,8 +12,8 @@ export function App() {
 
   const [avatar, setAvatar] = useState<File | null>(null);
   const [isError, setError] = useState(false);
-
   const [isSaved, setIsSaved] = useState(false);
+  const [zoom, setZoom] = useState(1);
 
   const inputRef = useRef<HTMLInputElement>(null);
 
@@ -33,14 +33,15 @@ export function App() {
     if (image && imageIsValid(image)) {
       setAvatar(image);
       setIsSaved(false);
-    }
-
+      setZoom(1);
+    };
     setError(!imageIsValid(image));
     
-  }
+  };
 
   const reset = () => {
     setAvatar(null);
+    setZoom(1);
     setError(false);
     setIsSaved(false);
   };
@@ -56,6 +57,13 @@ export function App() {
     const selectedFile = (event.target as HTMLInputElement).files![0];
 
     onUpdateStatus(selectedFile);
+  };
+
+  const handleSliderChange = (
+    e: React.ChangeEvent<unknown>,
+    value: number | number[]
+  ) => {
+    setZoom(value as number);
   };
 
   const dragOver = (event: DragEvent<HTMLDivElement>) => {
@@ -88,7 +96,10 @@ export function App() {
           imageFile={avatar}
           isError={isError}
           setIsSaved={setIsSaved}
+          handleSliderChange={handleSliderChange}
+          zoom={zoom}
           reset={reset}
+          
         />
       );
 
@@ -97,6 +108,7 @@ export function App() {
         imageFile={avatar}
         inputRef={inputRef}
         onChangeInput={onChangeInput}
+        zoom={zoom}
       />
     );
   };

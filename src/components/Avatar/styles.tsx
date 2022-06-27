@@ -9,7 +9,18 @@ export const Container = styled.div`
 
 `;
 
-export const Wrapper = styled.div``;
+export const Wrapper = styled.div`
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 57px;
+
+  width: 114px;
+  height: 114px;
+
+  margin-right: 32px;
+`;
 
 export const Image = styled.div<StyleProps>`
   display: flex;
@@ -29,7 +40,7 @@ export const Image = styled.div<StyleProps>`
 
   border-radius: 57px;
 
-  margin-right: 32px;
+  
 
 `;
 
