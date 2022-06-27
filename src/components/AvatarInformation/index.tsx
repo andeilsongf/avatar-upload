@@ -1,5 +1,5 @@
 import { RefObject } from 'react';
-// import PictureIconSvg from '../../assets/IconPicture.svg';
+import PictureIconSvg from '../../assets/IconPicture.svg';
 
 import {
   Container,
@@ -23,7 +23,7 @@ export function AvatarInformation({
     <Container>
       <Wrapper>
         <PictureIcon
-          // src={PictureIconSvg}
+          src={PictureIconSvg}
         />
         <Title>Organization Logo</Title>
       </Wrapper>

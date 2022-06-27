@@ -1,6 +1,6 @@
 
 import { HTMLAttributes, RefObject, useEffect, useState } from 'react';
-// import IconAlert from '../../assets/IconAlert.svg';
+import IconAlert from '../../assets/IconAlert.svg';
 
 import {
   Container,

@@ -8,7 +8,7 @@ import {
   Container
 } from './styles';
 
-const App = () => {
+export function App() {
 
   const [avatar, setAvatar] = useState<File | null>(null);
   const [isError, setError] = useState(false);
@@ -130,5 +130,3 @@ const App = () => {
     </div>
   )
 }
-
-export default App;

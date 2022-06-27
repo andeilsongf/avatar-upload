@@ -1,7 +1,7 @@
 import Slider from '@mui/material/Slider'
 import { useEffect, useRef } from 'react';
 
-// import IconCloseSvg from '../../assets/IconClose.svg';
+import IconCloseSvg from '../../assets/IconClose.svg';
 
 import { Avatar } from '../Avatar';
 import { Button } from '../Button';
@@ -70,7 +70,7 @@ export function ScaleAvatar({
 
       <CloseButton
         onClick={reset}
-        // src={IconCloseSvg}
+        src={IconCloseSvg}
         aria-label='Close'
       />
 
