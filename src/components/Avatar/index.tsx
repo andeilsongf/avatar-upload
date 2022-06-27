@@ -1,6 +1,6 @@
 
 import { HTMLAttributes, RefObject, useEffect, useState } from 'react';
-import IconAlert from '../../assets/IconAlert.svg';
+// import IconAlert from '../../assets/IconAlert.svg';
 
 import {
   Container,
@@ -32,8 +32,8 @@ export function Avatar({
   return (
     <Container>
       <Wrapper>
-        <Image error={error} url={path} ref={imgRef} >
-          { error && <IconAlertSvg src={IconAlert} />}
+        <Image error={error} url={path} ref={imgRef} aria-label='Avatar' >
+          { error && <IconAlertSvg  />}
         </Image>
       </Wrapper>
 

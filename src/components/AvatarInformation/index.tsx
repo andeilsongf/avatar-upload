@@ -1,5 +1,5 @@
 import { RefObject } from 'react';
-import PictureIconSvg from '../../assets/IconPicture.svg';
+// import PictureIconSvg from '../../assets/IconPicture.svg';
 
 import {
   Container,
@@ -23,16 +23,19 @@ export function AvatarInformation({
     <Container>
       <Wrapper>
         <PictureIcon
-          src={PictureIconSvg}
+          // src={PictureIconSvg}
         />
         <Title>Organization Logo</Title>
       </Wrapper>
-      <Description>Drop the image here or click to browse.</Description>
+      <Description aria-label='Upload Avatar'>
+        Drop the image here or click to browse.
+      </Description>
       <InputArea 
         type='file'
         ref={inputRef}
         onChange={onChangeInput}
         accept='image/png, image/jpeg, image/jpg'
+        data-testid='input-file'
       />
     </Container>
   );

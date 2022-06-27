@@ -25,7 +25,7 @@ export function SavedAvatar({
   useEffect(() => {
     imgRef.current?.style.setProperty(
       'transform',
-      `scale(${1 + zoom / 15})`
+      `scale(${1 + zoom / 10})`
     );
   }, []);
 

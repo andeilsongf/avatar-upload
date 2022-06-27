@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1656337489051" clover="3.2.0">
+  <project timestamp="1656337489051" name="All files">
+    <metrics statements="91" coveredstatements="84" conditionals="34" coveredconditionals="32" methods="25" coveredmethods="21" elements="150" coveredelements="137" complexity="0" loc="91" ncloc="91" packages="7" files="15" classes="15"/>
+    <package name="src">
+      <metrics statements="49" coveredstatements="42" conditionals="26" coveredconditionals="25" methods="13" coveredmethods="9"/>
+      <file name="App.tsx" path="/Users/agf/Documents/React/Interviews/avatar-upload/src/App.tsx">
+        <metrics statements="46" coveredstatements="40" conditionals="17" coveredconditionals="16" methods="12" coveredmethods="8"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="13" count="20" type="stmt"/>
+        <line num="14" count="20" type="stmt"/>
+        <line num="15" count="20" type="stmt"/>
+        <line num="16" count="20" type="stmt"/>
+        <line num="18" count="20" type="stmt"/>
+        <line num="20" count="20" type="stmt"/>
+        <line num="21" count="3" type="stmt"/>
+        <line num="24" count="20" type="stmt"/>
+        <line num="25" count="14" type="stmt"/>
+        <line num="27" count="14" type="cond" truecount="1" falsecount="1"/>
+        <line num="29" count="14" type="stmt"/>
+        <line num="32" count="20" type="stmt"/>
+        <line num="33" count="7" type="cond" truecount="4" falsecount="0"/>
+        <line num="34" count="5" type="stmt"/>
+        <line num="35" count="5" type="stmt"/>
+        <line num="36" count="5" type="stmt"/>
+        <line num="38" count="7" type="stmt"/>
+        <line num="42" count="20" type="stmt"/>
+        <line num="43" count="2" type="stmt"/>
+        <line num="44" count="2" type="stmt"/>
+        <line num="45" count="2" type="stmt"/>
+        <line num="46" count="2" type="stmt"/>
+        <line num="49" count="20" type="stmt"/>
+        <line num="50" count="0" type="stmt"/>
+        <line num="51" count="0" type="stmt"/>
+        <line num="52" count="0" type="stmt"/>
+        <line num="56" count="20" type="stmt"/>
+        <line num="57" count="7" type="stmt"/>
+        <line num="59" count="7" type="stmt"/>
+        <line num="62" count="20" type="stmt"/>
+        <line num="66" count="2" type="stmt"/>
+        <line num="69" count="20" type="stmt"/>
+        <line num="70" count="0" type="stmt"/>
+        <line num="73" count="20" type="stmt"/>
+        <line num="74" count="0" type="stmt"/>
+        <line num="77" count="20" type="stmt"/>
+        <line num="78" count="0" type="stmt"/>
+        <line num="81" count="20" type="stmt"/>
+        <line num="82" count="20" type="cond" truecount="2" falsecount="0"/>
+        <line num="84" count="18" type="cond" truecount="4" falsecount="0"/>
+        <line num="85" count="10" type="stmt"/>
+        <line num="92" count="8" type="cond" truecount="5" falsecount="0"/>
+        <line num="94" count="7" type="stmt"/>
+        <line num="106" count="1" type="stmt"/>
+        <line num="116" count="20" type="stmt"/>
+      </file>
+      <file name="main.tsx" path="/Users/agf/Documents/React/Interviews/avatar-upload/src/main.tsx">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="6" count="0" type="stmt"/>
+      </file>
+      <file name="styles.tsx" path="/Users/agf/Documents/React/Interviews/avatar-upload/src/styles.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="9" coveredconditionals="9" methods="1" coveredmethods="1"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="20" count="20" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.Avatar">
+      <metrics statements="10" coveredstatements="10" conditionals="6" coveredconditionals="5" methods="3" coveredmethods="3"/>
+      <file name="index.tsx" path="/Users/agf/Documents/React/Interviews/avatar-upload/src/components/Avatar/index.tsx">
+        <metrics statements="5" coveredstatements="5" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
+        <line num="24" count="16" type="stmt"/>
+        <line num="26" count="16" type="stmt"/>
+        <line num="27" count="8" type="cond" truecount="2" falsecount="0"/>
+        <line num="28" count="6" type="stmt"/>
+        <line num="32" count="16" type="stmt"/>
+      </file>
+      <file name="styles.tsx" path="/Users/agf/Documents/React/Interviews/avatar-upload/src/components/Avatar/styles.tsx">
+        <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="32" count="16" type="cond" truecount="1" falsecount="1"/>
+        <line num="47" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.AvatarInformation">
+      <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="index.tsx" path="/Users/agf/Documents/React/Interviews/avatar-upload/src/components/AvatarInformation/index.tsx">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="22" count="11" type="stmt"/>
+      </file>
+      <file name="styles.tsx" path="/Users/agf/Documents/React/Interviews/avatar-upload/src/components/AvatarInformation/styles.tsx">
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
+        <line num="37" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.Button">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="index.tsx" path="/Users/agf/Documents/React/Interviews/avatar-upload/src/components/Button/index.tsx">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="15" count="7" type="stmt"/>
+      </file>
+      <file name="styles.tsx" path="/Users/agf/Documents/React/Interviews/avatar-upload/src/components/Button/styles.tsx">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="3" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.SavedAvatar">
+      <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <file name="index.tsx" path="/Users/agf/Documents/React/Interviews/avatar-upload/src/components/SavedAvatar/index.tsx">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="32" count="1" type="stmt"/>
+      </file>
+      <file name="styles.tsx" path="/Users/agf/Documents/React/Interviews/avatar-upload/src/components/SavedAvatar/styles.tsx">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="3" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.ScaleAvatar">
+      <metrics statements="12" coveredstatements="12" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="4"/>
+      <file name="index.tsx" path="/Users/agf/Documents/React/Interviews/avatar-upload/src/components/ScaleAvatar/index.tsx">
+        <metrics statements="7" coveredstatements="7" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="4"/>
+        <line num="38" count="7" type="stmt"/>
+        <line num="40" count="7" type="stmt"/>
+        <line num="41" count="7" type="stmt"/>
+        <line num="47" count="7" type="stmt"/>
+        <line num="48" count="7" type="stmt"/>
+        <line num="51" count="7" type="stmt"/>
+        <line num="53" count="7" type="stmt"/>
+      </file>
+      <file name="styles.tsx" path="/Users/agf/Documents/React/Interviews/avatar-upload/src/components/ScaleAvatar/styles.tsx">
+        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="32" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.UploadHasFailed">
+      <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="index.tsx" path="/Users/agf/Documents/React/Interviews/avatar-upload/src/components/UploadHasFailed/index.tsx">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="18" count="2" type="stmt"/>
+      </file>
+      <file name="styles.tsx" path="/Users/agf/Documents/React/Interviews/avatar-upload/src/components/UploadHasFailed/styles.tsx">
+        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="36" count="1" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>

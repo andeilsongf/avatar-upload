@@ -8,7 +8,7 @@ import {
   Container
 } from './styles';
 
-export function App() {
+const App = () => {
 
   const [avatar, setAvatar] = useState<File | null>(null);
   const [isError, setError] = useState(false);
@@ -126,9 +126,9 @@ export function App() {
         onDragLeave={dragLeave}
       >
         {renderChild()}
-
       </Container>
     </div>
   )
-
 }
+
+export default App;

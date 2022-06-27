@@ -20,9 +20,9 @@ export function UploadHasFailed({
       <Avatar error />
       <Wrapper>
         <Title>Sorry, the upload failed.</Title>
-        <Description onClick={reset} >Try again</Description>
+        <Description onClick={reset} aria-label='Try Again'>Try again</Description>
       </Wrapper>
-      <CloseButton/>
+      <CloseButton aria-label='Close'/>
     </Container>
   );
 }

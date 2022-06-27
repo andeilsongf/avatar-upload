@@ -1,7 +1,7 @@
 import Slider from '@mui/material/Slider'
 import { useEffect, useRef } from 'react';
 
-import IconCloseSvg from '../../assets/IconClose.svg';
+// import IconCloseSvg from '../../assets/IconClose.svg';
 
 import { Avatar } from '../Avatar';
 import { Button } from '../Button';
@@ -40,7 +40,7 @@ export function ScaleAvatar({
   const setZoom = (zoom: number) => {
     imgRef.current?.style.setProperty(
       'transform',
-      `scale(${zoom > 1 ? 1 + zoom / 15 : 1})`
+      `scale(${zoom > 1 ? 1 + zoom / 10 : 1})`
     );
   };
 
@@ -61,6 +61,7 @@ export function ScaleAvatar({
           onChange={handleSliderChange}
           min={1}
           max={10}
+          aria-label='Slider'
         />
 
         <Button onClick={handleSaveButtonClick}>Save</Button>
@@ -69,7 +70,8 @@ export function ScaleAvatar({
 
       <CloseButton
         onClick={reset}
-        src={IconCloseSvg}
+        // src={IconCloseSvg}
+        aria-label='Close'
       />
 
     </Container>
