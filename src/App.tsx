@@ -21,6 +21,12 @@ export function App() {
     inputRef.current?.click();
   };
 
+  const reset = () => {
+    setAvatar(null);
+    setError(false);
+    setIsSaved(false);
+  };
+
   const imageIsValid = (image?: File) => {
     const validFormats = ['image/jpeg', 'image/jpg', 'image/png'];
 
@@ -52,7 +58,7 @@ export function App() {
   };
 
   const renderChild = () => {
-    if (isError) return <UploadHasFailed />;
+    if (isError) return <UploadHasFailed reset={reset} />;
 
     if (!isError && !avatar)
       return (
@@ -62,13 +68,16 @@ export function App() {
       );
 
     if (!isError && avatar && !isSaved)
+
       return (
         <ScaleAvatar
           imageFile={avatar}
           isError={isError}
           setIsSaved={setIsSaved}
+          reset={reset}
         />
       );
+
     return (
       <SavedAvatar
         imageFile={avatar}
@@ -86,7 +95,7 @@ export function App() {
       onClick={onClickContainer}
       onDrop={dropAvatar}
     >
-      
+
       {renderChild()}
 
     </Container>

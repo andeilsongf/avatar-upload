@@ -18,12 +18,14 @@ interface Props {
   isError: boolean;
   imageFile: File | null;
   setIsSaved: (value: boolean) => void;
+  reset: () => void;
 }
 
 export function ScaleAvatar({
   isError,
   imageFile,
   setIsSaved,
+  reset,
 }: Props) {
 
   const imgRef = useRef<HTMLDivElement>(null);
@@ -46,6 +48,7 @@ export function ScaleAvatar({
       </ScaleWrapper>
 
       <CloseButton
+        onClick={reset}
         src={IconCloseSvg}
       />
 

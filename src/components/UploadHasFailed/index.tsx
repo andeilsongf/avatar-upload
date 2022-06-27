@@ -12,13 +12,15 @@ interface Props {
   reset: () => void;
 }
 
-export function UploadHasFailed() {
+export function UploadHasFailed({
+  reset,
+}: Props) {
   return (
     <Container>
       <Avatar error />
       <Wrapper>
         <Title>Sorry, the upload failed.</Title>
-        <Description >Try again</Description>
+        <Description onClick={reset} >Try again</Description>
       </Wrapper>
       <CloseButton/>
     </Container>
